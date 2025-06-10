@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confiserie StovbaGalyna</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-pink-50 text-gray-800 font-sans">
+  <!-- Hero section -->
+  <section class="bg-gradient-to-br from-pink-100 to-pink-300 text-center p-10 shadow-inner">
+    <img src="https://via.placeholder.com/150x150" alt="Logo" class="mx-auto mb-4 rounded-full shadow-lg">
+    <h1 class="text-4xl font-bold text-pink-700">Confiserie StovbaGalyna</h1>
+    <p class="mt-2 text-lg text-pink-900">Сучасні десерти, торти на замовлення, з любов'ю</p>
+    <a href="#catalog" class="inline-block mt-6 bg-pink-500 hover:bg-pink-600 text-white py-2 px-6 rounded-full shadow">Переглянути каталог</a>
+  </section>
+
+  <!-- Каталог -->
+  <section id="catalog" class="p-10 bg-white">
+    <h2 class="text-2xl font-semibold text-center text-pink-700 mb-8">Наші солодощі</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="bg-pink-50 rounded-lg p-4 shadow-md">
+        <img src="https://via.placeholder.com/300x200" class="rounded mb-2">
+        <h3 class="font-bold text-pink-800">Бенто торт "Снікерс"</h3>
+        <p>Шоколадний бісквіт з карамеллю і арахісом</p>
+        <p class="text-pink-600 font-semibold mt-2">200 грн</p>
+      </div>
+      <div class="bg-pink-50 rounded-lg p-4 shadow-md">
+        <img src="https://via.placeholder.com/300x200" class="rounded mb-2">
+        <h3 class="font-bold text-pink-800">Макаруни "Mix Box"</h3>
+        <p>Ніжні французькі десерти — 6 смаків</p>
+        <p class="text-pink-600 font-semibold mt-2">180 грн</p>
+      </div>
+      <div class="bg-pink-50 rounded-lg p-4 shadow-md">
+        <img src="https://via.placeholder.com/300x200" class="rounded mb-2">
+        <h3 class="font-bold text-pink-800">Весільний торт</h3>
+        <p>Індивідуальний дизайн, доставка в Червоноград</p>
+        <p class="text-pink-600 font-semibold mt-2">від 500 грн</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Форма замовлення -->
+  <section class="bg-pink-100 p-10">
+    <h2 class="text-2xl text-center text-pink-700 font-semibold mb-6">Бронювання десерту</h2>
+    <form id="bookingForm" class="max-w-xl mx-auto bg-white p-6 rounded shadow">
+      <input type="text" placeholder="Ваше ім'я" class="w-full p-2 mb-4 border rounded" required>
+      <input type="tel" placeholder="Телефон/Viber/Telegram" class="w-full p-2 mb-4 border rounded" required>
+      <input type="email" placeholder="Email (необов'язково)" class="w-full p-2 mb-4 border rounded">
+      <select class="w-full p-2 mb-4 border rounded" required>
+        <option disabled selected>Оберіть десерт</option>
+        <option>Бенто торт "Снікерс"</option>
+        <option>Макаруни "Mix Box"</option>
+        <option>Весільний торт</option>
+      </select>
+      <input type="date" class="w-full p-2 mb-4 border rounded" required>
+      <textarea placeholder="Коментар або побажання" class="w-full p-2 mb-4 border rounded"></textarea>
+      <button type="submit" class="bg-pink-500 hover:bg-pink-600 text-white px-4 py-2 rounded w-full">Забронювати</button>
+    </form>
+  </section>
+
+  <!-- Оплата -->
+  <section class="p-10 bg-white">
+    <h2 class="text-2xl text-center text-pink-700 font-semibold mb-6">Оплата онлайн</h2>
+    <div class="text-center">
+      <p class="mb-4">Після підтвердження бронювання ви отримаєте посилання на оплату:</p>
+      <a href="#" class="inline-block bg-green-500 text-white px-4 py-2 rounded-full shadow hover:bg-green-600 mb-2">Monobank</a><br>
+      <a href="#" class="inline-block bg-gray-800 text-white px-4 py-2 rounded-full shadow hover:bg-gray-900">LiqPay</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-pink-200 text-center p-6 text-sm text-gray-700">
+    © 2025 Confiserie StovbaGalyna · <a href="mailto:galyna@confiserie.com" class="underline">galyna@confiserie.com</a> · Telegram/Viber: +380XX XXX XX XX
+  </footer>
+
+  <script>
+    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Вашу заявку прийнято! Ми зв\'яжемося з вами найближчим часом.');
+    });
+  </script>
+</body>
+</html>
